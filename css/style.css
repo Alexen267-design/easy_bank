@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  z-index: -10;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+.heading-1 {
+  font-weight: 400;
+  color: hsl(233, 26%, 24%);
+  font-size: 5rem;
+}
+
+.paragraph {
+  color: hsl(233, 8%, 62%);
+}
+
+.heading-2 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: hsl(233, 26%, 24%);
+}
+
+.heading-3 {
+  color: hsl(233, 26%, 24%);
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.logo-white {
+  fill: hsl(0, 0%, 100%);
+}
+
+.copyright {
+  color: hsl(233, 8%, 62%);
+  font-size: 1.6rem;
+}
+
+.nav {
+  display: flex;
+}
+.nav__item {
+  list-style: none;
+}
+.nav__item:not(:last-child) {
+  margin-right: 4rem;
+}
+.nav__link {
+  text-decoration: none;
+  color: hsl(233, 8%, 62%);
+  padding-bottom: 3.2rem;
+  position: relative;
+  z-index: 10;
+}
+.nav__link::before {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  z-index: -1;
+  border-bottom: 4px solid transparent;
+  transition: all 0.4s;
+  transform-origin: center;
+}
+.nav__link:hover::before, .nav__link:focus::before {
+  transform: scaleX(1);
+  border-bottom: 4px solid hsl(136, 65%, 51%);
+}
+
+.btn {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.6rem;
+  padding: 1.5rem 3.6rem;
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  border-radius: 3rem;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn:hover {
+  background-image: linear-gradient(to right, hsl(136, 96%, 74%), hsl(192, 90%, 74%));
+}
+
+.heading {
+  flex: 0 0 52%;
+  width: 100vw;
+  margin-bottom: 8rem;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+}
+.features .feature {
+  flex: 0 0 23%;
+}
+.features .feature:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.cards .card {
+  width: 23%;
+  background-color: hsl(0, 0%, 100%);
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+.cards .card__img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.cards .card__author {
+  color: hsl(233, 8%, 62%);
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+}
+.cards .card__title {
+  font-weight: 300;
+  color: hsl(233, 26%, 24%);
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.cards .card__title:hover {
+  color: hsl(192, 70%, 51%);
+}
+.cards .card__content {
+  font-size: 1.3rem;
+  color: hsl(233, 8%, 62%);
+}
+.cards .card__text {
+  padding: 2rem;
+}
+
+.logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.brands .brand:not(:last-child) {
+  margin-right: 0.8rem;
+}
+.brands .brand__img {
+  fill: #fff;
+  transition: all 0.2s;
+}
+.brands .brand:hover .brand__img {
+  fill: hsl(192, 70%, 51%);
+}
+
+.copyrights {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.nav-v__item {
+  list-style: none;
+  margin-bottom: 1.4rem;
+}
+.nav-v__link {
+  text-decoration: none;
+  color: hsl(220, 16%, 96%);
+  font-weight: 300;
+  font-size: 1.5rem;
+  transition: all 0.2s;
+}
+.nav-v__link:hover {
+  color: hsl(192, 70%, 51%);
+}
+
+.header {
+  background-color: hsl(0, 0%, 100%);
+  padding: 2rem 0;
+}
+.header > .row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  background-color: hsl(0, 0%, 98%);
+  z-index: -3;
+  overflow: hidden;
+}
+.main__img {
+  position: absolute;
+  top: -25rem;
+  left: 70rem;
+  z-index: -1;
+}
+.main__heading {
+  flex: 0 0 42%;
+}
+.main__row {
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  height: 100%;
+  width: 83vw;
+  margin: 0 auto;
+}
+
+.section-features {
+  padding: 10rem 0;
+  background-color: hsl(220, 16%, 96%);
+}
+
+.features__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-latest {
+  padding: 10rem;
+  background-color: hsl(0, 0%, 98%);
+}
+
+.footer {
+  padding: 5rem 0;
+  background-color: hsl(233, 26%, 24%);
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.u-mb-small {
+  margin-bottom: 2rem;
+}
+
+.u-mb-medium {
+  margin-bottom: 4rem;
+}
+
+.u-mb-m-small {
+  margin-bottom: 3rem;
+}
+
+.u-mb-large {
+  margin-bottom: 6rem;
+}
+
+/*# sourceMappingURL=style.css.map */

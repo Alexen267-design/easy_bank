@@ -1,0 +1,35 @@
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.8rem;
+}
+
+.heading-1 {
+  font-weight: 400;
+  color: $color-dark-blue;
+  font-size: 5rem;
+}
+
+.paragraph {
+  color: $color-grayish-blue;
+}
+
+.heading-2 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: $color-dark-blue;
+}
+
+.heading-3 {
+  color: $color-dark-blue;
+  font-weight: 300;
+  font-size: 2.5rem;
+}
+
+.logo-white {
+  fill: $color-white;
+}
+
+.copyright {
+  color: $color-grayish-blue;
+  font-size: 1.6rem;
+}
